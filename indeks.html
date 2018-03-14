@@ -4,6 +4,34 @@
 	<title>ćwiczenia z js</title>
 </head>
 <body>
+	<button id="one" onclick="potatoe ()">click</button>
 
+	<button id="two" onclick="coockie ()">click me</button>
+
+	<button id="three" onclick="muffin ()">press me</button>
+
+	<p id="demo"></p>
+		<script type="text/javascript">
+			
+			function apple(a,b){
+				console.log(a+b);
+			}
+			apple(2,5);
+			
+			function potatoe() {
+				alert("OH NO");
+			}
+			function coockie () {
+				confirm("for sure?");
+			}
+			function muffin () {
+				var name = prompt("What's your name?", "Harry Potter");
+				if (name !=null) {
+					document.getElementById('demo').innerHTML =
+					 "Hello, " + name +  " how are you? ";
+				}
+			}
+		</script>
 </body>
+
 </html>
